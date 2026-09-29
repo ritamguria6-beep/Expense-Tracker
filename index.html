@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Expense Tracker</title><link rel="stylesheet" href="style.css"></head><body><main>
+<h1>Expense Tracker</h1>
+<section class="sum"><div class="c inc">Income<b id="inc">0</b></div><div class="c exp">Expenses<b id="exp">0</b></div><div class="c bal">Balance<b id="bal">0</b></div></section>
+<form id="form"><select id="type"><option value="income">Income</option><option value="expense" selected>Expense</option></select>
+<input id="desc" placeholder="Description"><input id="amt" type="number" step="0.01" min="0" placeholder="Amount">
+<select id="cat"><option>Food</option><option>Transport</option><option>Bills</option><option>Shopping</option><option>Salary</option><option>Other</option></select>
+<input id="date" type="date"><button id="btn">Add</button></form><p id="err"></p>
+<div class="bar"><label>Filter: <select id="filter"><option value="all">All categories</option><option>Food</option><option>Transport</option><option>Bills</option><option>Shopping</option><option>Salary</option><option>Other</option></select></label></div>
+<ul id="list"></ul></main><script src="script.js"></script></body></html>
